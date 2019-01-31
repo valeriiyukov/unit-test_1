@@ -4,11 +4,12 @@
   "description": "Browser based game",
   "main": "index.js",
   "scripts": {
+    "build": "babel src -d dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/valeriiyukov/yukov_working-enviroment.git"
+    "url": "git+https://github.com/valeriiyukov/yukov_working-enviroment2.git"
   },
   "keywords": [
     "game"
@@ -16,7 +17,12 @@
   "author": "Valeriy",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/valeriiyukov/yukov_working-enviroment/issues"
+    "url": "https://github.com/valeriiyukov/yukov_working-enviroment2/issues"
   },
-  "homepage": "https://github.com/valeriiyukov/yukov_working-enviroment#readme"
+  "homepage": "https://github.com/valeriiyukov/yukov_working-enviroment2#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1"
+  }
 }
