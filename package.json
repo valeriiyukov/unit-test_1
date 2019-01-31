@@ -5,11 +5,12 @@
   "main": "index.js",
   "scripts": {
     "build": "babel src -d dist",
+    "lint": "eslint .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/valeriiyukov/yukov_working-enviroment2.git"
+    "url": "git+https://github.com/valeriiyukov/yukov_working-enviroment3.git"
   },
   "keywords": [
     "game"
@@ -17,12 +18,15 @@
   "author": "Valeriy",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/valeriiyukov/yukov_working-enviroment2/issues"
+    "url": "https://github.com/valeriiyukov/yukov_working-enviroment3/issues"
   },
-  "homepage": "https://github.com/valeriiyukov/yukov_working-enviroment2#readme",
+  "homepage": "https://github.com/valeriiyukov/yukov_working-enviroment3#readme",
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.2.2",
-    "@babel/preset-env": "^7.3.1"
+    "@babel/preset-env": "^7.3.1",
+    "eslint": "^5.12.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0"
   }
 }
