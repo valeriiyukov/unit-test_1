@@ -1,9 +1,21 @@
+
 const characters = [
-  { name: 'мечник', health: 10 },
-  { name: 'маг', health: 100 },
-  { name: 'маг', health: 0 },
-  { name: 'лучник', health: 0 },
+  { name: 'Маг', health: 90 },
 ];
 
-const alive = characters.filter(item => item.health > 0);
-console.log(alive);
+export default function getHealthStatus(character) {
+  let healthStatus = '';
+  for (const char of character) {
+    const { health } = char;
+    if (health > 50) {
+      healthStatus = 'healthy';
+    } else if (health <= 50 && health >= 15) {
+      healthStatus = 'wounded';
+    } else {
+      healthStatus = 'critical';
+    }
+  }
+  return healthStatus;
+}
+
+console.log(getHealthStatus(characters));
