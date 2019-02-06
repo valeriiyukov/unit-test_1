@@ -14,6 +14,7 @@ export default function getHealthStatus(character) {
     } else {
       healthStatus = 'critical';
     }
+    return healthStatus;
   }
   return healthStatus;
 }
